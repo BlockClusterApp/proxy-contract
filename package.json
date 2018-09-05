@@ -1,0 +1,6 @@
+{
+  "name": "proxy-contract",
+  "dependencies": {
+    "web3": "0.20.6"
+  }
+}
