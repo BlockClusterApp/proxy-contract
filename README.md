@@ -12,17 +12,17 @@ To run this truffle project you need to configure your networks smart contract a
 
 First of all create a new network on [app.blockcluster.io](http://app.blockcluster.io/login). The you will see this control panel for your network:
 
-![Screen Shot 2018-09-06 at 12.52.48 AM](/Users/narayan/Desktop/Screen Shot 2018-09-06 at 12.52.48 AM.png)
+![Screen Shot 2018-09-06 at 12.52.48 AM](https://s22.postimg.cc/c363yy9s1/Screen_Shot_2018-09-06_at_12.52.48_AM.png)
 
 Then click on <u>Node Info and Settings</u> option to view your dynamo node's network and contracts information. You would see a screen similar to this:
 
-![Screen Shot 2018-09-06 at 12.54.43 AM](/Users/narayan/Desktop/Screen Shot 2018-09-06 at 12.54.43 AM.png)
+![Screen Shot 2018-09-06 at 12.54.43 AM](https://s22.postimg.cc/itml8d22p/Screen_Shot_2018-09-06_at_12.54.43_AM.png)
 
 Now copy the assets, streams and atomic swap contracts addresses and replace with the dummy ones provided in the [contracts/Example.sol](https://github.com/BlockClusterApp/proxy-contract/blob/master/contracts/Example.sol) file.
 
-The next step is to go to the API option on the control panel page. You will see a screen similar to this:
+The next step is to go to the <u>API</u> option on the control panel page. You will see a screen similar to this:
 
-![Screen Shot 2018-09-06 at 12.58.39 AM](/Users/narayan/Desktop/Screen Shot 2018-09-06 at 12.58.39 AM.png)
+![Screen Shot 2018-09-06 at 12.58.39 AM](https://s22.postimg.cc/3xo20qgdd/Screen_Shot_2018-09-06_at_12.58.39_AM.png)
 
 Now copy the Dynamo APIs URL and replace with the dummy one provided in the [truffle.js](https://github.com/BlockClusterApp/proxy-contract/blob/master/truffle.js) file.
 
@@ -53,4 +53,6 @@ Finally, run the mocha tests:
 ```shell
 truffle test
 ```
+
+
 
