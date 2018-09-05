@@ -3,12 +3,12 @@ pragma solidity ^0.4.18;
 contract Assets {
     function changeAdmin(string assetName, address newAdmin) {}
 
-    function createBulkAssetType(string assetName, bool reissuable, int256 parts, string description) {}
+    function createBulkAssetType(string assetName, bool reissuable, uint parts, string description) {}
     function getBulkAssetTypeIssuer(string assetName) returns (address issuer) {}
-    function getBulkAssetParts(string assetName) returns (int256 parts) {}
-    function issueBulkAsset(string assetName, int256 units, address to, string description) {}
-    function getBulkAssetUnits(string assetName, address from) returns (int256 units) {}
-    function transferBulkAssetUnits(string assetName, address to, int256 units, string description) returns (bool result) {}
+    function getBulkAssetParts(string assetName) returns (uint parts) {}
+    function issueBulkAsset(string assetName, uint units, address to, string description) {}
+    function getBulkAssetUnits(string assetName, address from) returns (uint units) {}
+    function transferBulkAssetUnits(string assetName, address to, uint units, string description) returns (bool result) {}
 
     function createSoloAssetType(string assetName, string description) {}
     function getSoloAssetTypeAdmin(string assetName) returns (address issuer) {}
@@ -26,7 +26,7 @@ contract Assets {
     function canIssueSoloAsset(string assetName, address issuer) returns (bool canIssue) {}
     function closeSoloAsset(string assetName, string uniqueAssetIdentifier) {}
 
-    function approve(string assetType, string assetName, string assetId, int256 assetUnits, address spender) {}
-    function isApproved(string assetType, string assetName, string assetId, int256 assetUnits, address spender, address from) returns (bool result) {}
-    function transferAssetFrom(string assetType, string assetName, string assetId, int256 assetUnits, address from, address to) returns (bool result) {}
+    function approve(string assetType, string assetName, string assetId, uint assetUnits, address spender) {}
+    function isApproved(string assetType, string assetName, string assetId, uint assetUnits, address spender, address from) returns (bool result) {}
+    function transferAssetFrom(string assetType, string assetName, string assetId, uint assetUnits, address from, address to) returns (bool result) {}
 }
