@@ -1,5 +1,10 @@
 pragma solidity ^0.4.18;
 
+/*
+    Solo Assets Meta Data values are of type string.
+    So to store any other type first convert them to string.
+*/
+
 library Utilities {
     function uint2str(uint i) internal pure returns (string){
         if (i == 0) return "0";
@@ -29,5 +34,5 @@ library Utilities {
             }
         }
     }
-    
+
 }

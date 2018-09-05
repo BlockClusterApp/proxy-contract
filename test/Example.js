@@ -1,9 +1,10 @@
 let Example = artifacts.require("./Example.sol")
 
 contract("Example", accounts => {
-    it("Test Balance", async _ => {
+    it("Test Balance", async () => {
         let Example_Instance = await Example.deployed()
-        let balance = await Example_Instance.testAssets()
-        assert.equal(10000, balance);
+        await Example_Instance.testAssets()
+        let balance = await Example_Instance.getTestAssetBalance.call()
+        assert.equal(10000, balance.toNumber());
     })
 })

@@ -13,14 +13,15 @@ contract Example {
         deployer = msg.sender;
     }
 
-    function testAssets() returns (uint balance) {
+    function testAssets() {
         //Create example coin asset
         assets.createBulkAssetType("exampleCoin", true, 2, "");
 
         //Issuing 100 example coins.
         assets.issueBulkAsset("exampleCoin", 10000, msg.sender, "Self Issue"); //We supplied 10000 because of 2 parts.
+    }
 
-        //get balance
+    function getTestAssetBalance() returns (uint balance) {
         return assets.getBulkAssetUnits("exampleCoin", msg.sender);
     }
 }
