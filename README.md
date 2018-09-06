@@ -54,5 +54,17 @@ Finally, run the mocha tests:
 truffle test
 ```
 
+## Auditing
 
+To convert the transactions related to the proxy contract into readable format in Audit explorer you would need to add the proxy contract's bytecode and ABI in dynamo. 
+
+To do this, click on <u>Add Smart Contracts</u> option in control panel. You will see a screen similar to this:
+
+![Screen Shot 2018-09-06 at 1.08.34 AM](https://s22.postimg.cc/5ph0vm4v5/Screen_Shot_2018-09-06_at_1.08.34_AM.png)
+
+Now copy the bytecode and ABI from your projects <u>build/contracts/Example.json</u> file and paste it in the form. Then submit the form. Now you will be able to audit all `Example` contracts transactions in the explorer.
+
+Here is how a transaction will look when viewed in explorer:
+
+![Screen Shot 2018-09-06 at 4.09.42 PM](https://s22.postimg.cc/x30gf7wld/Screen_Shot_2018-09-06_at_4.09.42_PM.png)
 

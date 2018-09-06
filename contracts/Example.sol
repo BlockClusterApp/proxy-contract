@@ -5,9 +5,9 @@ import "./Streams.sol";
 
 contract Example {
     address deployer;
-    Assets assets = Assets(0xeaebe91d5d658be4016154d8572d6abdea729e6d);
-    AtomicSwap atomicSwap = AtomicSwap(0xe2b8c8140d31fa5fa289806703110846a1edc3b0);
-    Streams streams = Streams(0x149315bb869dd791dbb7d48d1e9a8d88b0002deb);
+    Assets assets = Assets(0xf9a70819010c72d89fc184e4e716eb1d71a1f215);
+    AtomicSwap atomicSwap = AtomicSwap(0x235c1c2d8c6bc4a873de2246605f902ef77f2987);
+    Streams streams = Streams(0x75c2f1b40d648c31392f8de7d1cbaca35e112769);
 
     function Example() {
         deployer = msg.sender;
